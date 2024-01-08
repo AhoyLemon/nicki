@@ -4,18 +4,18 @@ var app = new Vue({
     timer: 0,
     round: {
       pics: [
-        { img: "01.jpg", isIt: false, message: `88.6% of Nicki Minaj fans get this wrong! Will you?` },
-        { img: "02.jpg", isIt: false },
-        { img: "03.jpg", isIt: false },
-        { img: "04.jpg", isIt: false },
-        { img: "05.jpg", isIt: false },
-        { img: "06.jpg", isIt: false },
-        { img: "07.jpg", isIt: true },
-        { img: "08.jpg", isIt: false },
-        { img: "09.jpg", isIt: false },
-        { img: "10.jpg", isIt: true },
-        { img: "11.jpg", isIt: false },
-        { img: "12.jpg", isIt: false },
+        { img: "01.webp", isIt: false, message: `88.6% of Nicki Minaj fans get this wrong! Will you?` },
+        { img: "02.webp", isIt: false },
+        { img: "03.webp", isIt: false },
+        { img: "04.webp", isIt: false },
+        { img: "05.webp", isIt: false },
+        { img: "06.webp", isIt: false },
+        { img: "07.webp", isIt: true },
+        { img: "08.webp", isIt: false },
+        { img: "09.webp", isIt: false },
+        { img: "10.webp", isIt: true },
+        { img: "11.webp", isIt: false },
+        { img: "12.webp", isIt: false },
       ],
       count: 0,
     },
@@ -184,7 +184,9 @@ var app = new Vue({
         `Tell your friends if you get <strong>this one</strong> right!`,
         `Look closer 👀 Can you See The Right Answer!?`,
         `As Bart Simpson would say, "Ay Carumba!"`,
-        `You <strong>CAN'T</strong> unsee this picture! 😂`
+        `You <strong>CAN'T</strong> unsee this picture! 😂`,
+        `Test your Nickibrain against <strong>this</strong> tough question!`
+
       ];
 
       if (self.round.pics[self.round.count] && self.round.pics[self.round.count].message) {
