@@ -1,0 +1,31 @@
+
+<main class="game-over" v-if="isGameOver">
+  <section class="headline">
+    <h1>Game Over</h1>
+  </section>
+  <section class="feedback">
+    <div class="inner">
+      <template v-if="!computedSuccess">
+        <h1>Shameful!</h1>
+        <p>There are so many things that exist in this world, and you can not tell if a <strong>single one of them</strong> is American pop icon Nicki Minaj.</p>
+        <p>Experts believe this is a sign of tuberculosis.</p>
+      </template>
+      <template v-else-if="user.iq &gt; 100">
+        <h1>Congratulations!</h1>
+        <p>Of all the people, places and things that exist in the world, you can tell if {{computedSuccess}}% of them are Nicki Minaj. </p>
+        <p>This gives you an IQ of {{user.iq}}, which is higher than American football legend Johnny Unitas.</p>
+      </template>
+      <template v-else="v-else">
+        <h1>Nice try!</h1>
+        <p>Of all the people, places and things that exist in the world, you can tell if {{computedSuccess}}% of them are Nicki Minaj. </p>
+        <p>This gives you an IQ of {{user.iq}}, which is higher than that of the average (untrained) raccoon.</p>
+      </template>
+    </div>
+  </section>
+  <section class="credits">
+    <div class="inner">
+      <p>This site was created by <a href="https://ahoylemon.xyz" target="_blank">Lemon</a>, based on an idea from <a href="https://www.etsy.com/shop/KLMedia" target="_blank">Kendrick Lobstar</a></p>
+      <p>If you didn't find it funny... Well, at least it was short.</p>
+    </div>
+  </section>
+</main>

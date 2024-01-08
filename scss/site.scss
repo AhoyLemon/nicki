@@ -30,3 +30,71 @@
 
 // FINALLY, we should have a place for things we still need to get to...
 @import "todo/shame";
+
+main.question { height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem;  background:#cfcfcf;
+  .card { background:#fff; padding:10px 40px 30px 40px; display:flex; flex-direction: column; gap:20px; max-width: 500px; box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.5);
+    h1, h2, h3, h4, h5, p:last-child { margin-bottom: 0; }
+    h1 { font-size:48px; font-weight: 800; margin:0; }
+    img { width:100%; aspect-ratio: 2/1; object-fit: cover; object-position: center; }
+    .choices-and-timer { display:grid; grid-template-columns: 4em 1fr; }
+    .timer { font-family: $monospace; font-size:26px; font-weight: 600; line-height: 100%; padding-top: 0.4em;
+      .m { font-size:200%; }
+      .s { font-size:200%; }
+    }
+    .choices { text-align: right;
+      button { font-size:2em; border: 0.1em solid; border-radius: 50%; background-color:transparent; width:50px; height:50px; cursor: pointer;
+        svg { width:1em; height:1em;
+          * { fill:currentColor; }
+        }
+        &.yes { color:$green; border-color: $green;
+          svg { transform: translateY(5%); }
+          &:hover { background:$green; color:$white; }
+        }
+        &.no { color:$red; border-color:$red;
+          svg { transform: translateY(20%); }
+          &:hover { background:$red; color:$white; }
+        }
+      }
+    }
+  } 
+}
+
+.iq { @include position(fixed,0,0); background:beige; padding:20px;  font-weight: 500;
+  .value { font-size:200%; font-family: $monospace; font-weight: 500; }
+}
+
+.game-over { background:#111; color:#eee;
+  .inner { max-width: 66ch;}
+}
+
+.notify {
+  .notify__text { font-weight: 600; }
+  &.notify--success {
+    .notify__text {
+      strong { color:var(--notify-success-progress); }
+    }
+  }
+}
+
+main.game-over { background:#e4e72c; color:#121212; min-height: 100vh;
+  .inner { width:100%; max-width: 72ch; margin-left: auto; margin-right: auto; }
+
+  section.headline { min-height: 68vh; margin-bottom: $gap; display: flex; align-items: center; justify-content: center;
+    h1 { font-size:15vw; font-weight: 700; font-size:18vw; text-align: center; text-transform: uppercase; letter-spacing: 0.15em; margin:0; font-family: $display-font; }
+  }
+
+  section.feedback { background:#111; color:#eee; padding:6em;
+    p { font-family: $monospace; }
+  }
+
+  section.credits { padding:6em;
+    p { font-family: $monospace; }
+    a { color:inherit; text-decoration: none; color: #c85c0d; font-weight: 700;
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+
+  
+
+}

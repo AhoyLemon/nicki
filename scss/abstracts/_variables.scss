@@ -26,10 +26,14 @@ $bold:700;
 
 // FONT UTILITIES /////////////////////////////////////////////////////////////////////
 $serif: "Palatino", serif;
-$sans-serif: Helvetica, sans-serif;
+$sans-serif: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$display-font: 'Big Shoulders Display', sans-serif;
 $font-family: $sans-serif;
-$headline: $serif;
+$headline: $sans-serif;
+$monospace: 'Fira Code', monospace, monospace;
 
 // MEASUREMENTS //////////////////////////////////////////////////////////////////////
 $mobile-max: 767px;
 $desktop-min: 768px;
+$gap:40px;
+$padding:20px;
