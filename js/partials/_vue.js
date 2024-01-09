@@ -48,7 +48,6 @@ var app = new Vue({
       self.timer = self.rules.timeLimit;
       self.timerFunction = setInterval(()=> {
         self.timer -= 0.013;
-        // self.timer -= 0.027;
         if (self.timer <= 0) {
           clearInterval(self.timerFunction);
           self.timer = 0;

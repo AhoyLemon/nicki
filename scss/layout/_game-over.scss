@@ -1,0 +1,28 @@
+main.game-over { background:#e4e72c; color:#121212; min-height: 100vh;
+  .inner { width:100%; max-width: 72ch; margin-left: auto; margin-right: auto; }
+
+  section.headline { min-height: 68vh; margin-bottom: $gap; display: flex; align-items: center; justify-content: center;
+    
+    h1 { font-size:15vw; font-weight: 700; font-size:18vw; text-align: center; text-transform: uppercase; letter-spacing: 0.15em; margin:0; font-family: $display-font; }
+  }
+
+  section.feedback { background:#111; color:#eee; padding:6em 20px;
+    p { font-family: $monospace; }
+  }
+
+  section.credits { padding:6em 20px;
+    p { font-family: $monospace; }
+    a { color:inherit; text-decoration: none; color: #c85c0d; font-weight: 700;
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  @media (min-width:1000px) {
+    section.headline { min-height: 72vh; }
+  }
+  @media (max-width:999px) {
+    section.headline { min-height: 50vh; }
+  }
+}
+
+

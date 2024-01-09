@@ -1,0 +1,8 @@
+.notify {
+  .notify__text { font-weight: 600; }
+  &.notify--success {
+    .notify__text {
+      strong { color:var(--notify-success-progress); }
+    }
+  }
+}
