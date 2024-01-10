@@ -11,7 +11,7 @@
     <link href="css/site.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="88.6% of Nicki Minaj fans get this wrong! Will you?">
-    <meta http-equiv="last-modified" content="2024-00-09@17:26:03">
+    <meta http-equiv="last-modified" content="2024-00-10@09:03:55">
     <link rel="apple-touch-icon" sizes="180x180" href="https://isthisnickiminaj.com/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://isthisnickiminaj.com/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://isthisnickiminaj.com/favicon-16x16.png">
@@ -61,14 +61,15 @@
       </main>
       <main class="game-over" v-if="isGameOver">
         <section class="headline">
-          <h1>Game Over</h1>
+          <h1>Test Complete</h1>
         </section>
         <section class="feedback">
           <div class="inner">
+            <div class="before-headline">Your results...</div>
             <template v-if="!computedSuccess">
               <h2>Shameful!</h2>
-              <p>There are so many things that exist in this world, and you can not tell if a <strong>single one of them</strong> is American pop icon Nicki Minaj.</p>
-              <p>Experts believe this is a sign of tuberculosis.</p>
+              <p>When confronted with a wide array of people, places and things, and you can not tell if a single one of them is American pop icon Nicki Minaj.</p>
+              <p>Recognize that this is a failure in <strong>you</strong> as a person, and do whatever you can to try to be better in the future.</p>
             </template>
             <template v-else-if="user.iq &gt; 100">
               <h2>Congratulations!</h2>
@@ -91,12 +92,15 @@
       </main>
     </div>
     <div class="javascripts">
-      <script src="js/libraries/vue.full.js"></script>
-      <script>const testing = true;</script>
+      <script src="js/libraries/vue.min.js"></script>
+      <script>
+        const testing = false;
+        
+      </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css">
       <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
-      <script src="js/min/site.min.js?updated2024-00-09@17:26:03"></script>
+      <script src="js/min/site.min.js?updated2024-00-10@09:03:55"></script>
     </div>
   </body>
 </html>

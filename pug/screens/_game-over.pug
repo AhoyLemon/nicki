@@ -1,14 +1,15 @@
 main.game-over(v-if="isGameOver")
 
   section.headline
-    h1 Game Over
+    h1 Test Complete
 
   section.feedback
     .inner
+      .before-headline Your results...
       template(v-if="!computedSuccess")
         h2 Shameful!
-        p There are so many things that exist in this world, and you can not tell if a #[strong single one of them] is American pop icon Nicki Minaj.
-        p Experts believe this is a sign of tuberculosis.
+        p When confronted with a wide array of people, places and things, and you can not tell if a single one of them is American pop icon Nicki Minaj.
+        p Recognize that this is a failure in #[strong you] as a person, and do whatever you can to try to be better in the future.
       
       template(v-else-if="user.iq > 100")
         h2 Congratulations!
