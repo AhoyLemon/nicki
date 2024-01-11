@@ -1,4 +1,8 @@
-main.question { height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem;  background:#cfcfcf;
+main.question { height:100vh; display:flex; justify-content:center; padding:2rem;  background:#cfcfcf;
+
+  @media (min-height: 760px) { align-items: center; }
+  @media (max-height: 759px) { align-items: flex-start; }
+
   .card { background:#fff; padding:10px 40px 30px 40px; display:flex; flex-direction: column; gap:20px; max-width: 500px; box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.5);
     h1, h2, h3, h4, h5, p:last-child { margin-bottom: 0; }
     h1 { font-size:clamp(32px, 7vw, 48px); font-weight: 800; margin:0; }
